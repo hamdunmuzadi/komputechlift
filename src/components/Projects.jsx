@@ -194,7 +194,7 @@ export default function Projects() {
                         Product & Project Showcase
                     </span>
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-                        Katalog & Portofolio KOMPUTECHLIFT
+                        Katalog & Portofolio KOMPUTECLIFT
                     </h2>
                     <p className="text-gray-500 text-base">
                         Sistem transportasi vertikal yang aman, andal, dan terkustomisasi untuk berbagai kebutuhan industri, komersial, maupun hunian pribadi.
