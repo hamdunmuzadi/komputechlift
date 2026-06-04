@@ -72,7 +72,7 @@ export default function Hero() {
                         variants={itemVariants}
                         className="text-lg md:text-xl text-gray-600 max-w-2xl font-normal leading-relaxed"
                     >
-                        KOMPUTECHLIFT berpengalaman penuh dalam penyediaan, instalasi kustom, maintenance berkala, hingga modernisasi sistem lift demi menjamin keselamatan mobilitas vertikal Anda.
+                        komputeclift berpengalaman penuh dalam penyediaan, instalasi kustom, maintenance berkala, hingga modernisasi sistem lift demi menjamin keselamatan mobilitas vertikal Anda.
                     </motion.p>
 
                     {/* CTA Buttons */}
@@ -155,7 +155,7 @@ export default function Hero() {
 
                         {/* Bawah */}
                         <div className="pt-4 border-t border-slate-700 flex justify-between items-center text-xs">
-                            <span className="font-bold tracking-wider text-white">KOMPUTECH LIFT</span>
+                            <span className="font-bold tracking-wider text-white">KOMPUTECLIFT</span>
                             <span className="text-slate-400">Cap. 1600 KG</span>
                         </div>
                     </motion.div>

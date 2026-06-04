@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                         Kualifikasi & Keunggulan
                     </span>
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-                        Mengapa KOMPUTECHLIFT?
+                        Mengapa komputeclift?
                     </h2>
                     <p className="text-gray-500 font-normal text-base">
                         Kami mengintegrasikan keahlian teknis tingkat tinggi dengan standar keamanan ketat untuk menghadirkan efisiensi mobilitas vertikal yang optimal.

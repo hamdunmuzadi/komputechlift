@@ -1,6 +1,7 @@
 "use client";
 
-import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero"; // 1. Pastikan komponen Hero diimpor kembali
 import Services from "../components/Services";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Brands from "../components/Brands";
@@ -14,17 +15,24 @@ import Footer from "../components/Footer";
 export default function HomeClient() {
     return (
         <div className="min-h-screen bg-white antialiased selection:bg-blue-500 selection:text-white">
+            {/* Navbar melayang di atas semua konten */}
+            <Navbar />
+
             <main>
+                {/* 2. Selipkan Hero Section di urutan pertama sebelum Services */}
                 <Hero />
+
+                {/* Urutan Alur Section Selanjutnya */}
                 <Services />
                 <WhyChooseUs />
                 <Brands />
                 <Projects />
                 <TrustedBy />
-                <CompanyDocuments />
+                {/* <CompanyDocuments /> */}
                 <MediaSocial />
                 <Contact />
             </main>
+
             <Footer />
         </div>
     );

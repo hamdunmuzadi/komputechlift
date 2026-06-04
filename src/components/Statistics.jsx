@@ -103,7 +103,7 @@ export default function Statistics() {
                         Komitmen Nyata Melalui Angka
                     </h2>
                     <p className="text-gray-500 font-normal text-base">
-                        Kombinasi antara dedikasi teknis tinggi, kepatuhan keselamatan kerja, dan kepuasan klien yang membentuk reputasi KOMPUTECHLIFT hingga hari ini.
+                        Kombinasi antara dedikasi teknis tinggi, kepatuhan keselamatan kerja, dan kepuasan klien yang membentuk reputasi komputeclift hingga hari ini.
                     </p>
                 </div>
 

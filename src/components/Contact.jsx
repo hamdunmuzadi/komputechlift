@@ -9,18 +9,18 @@ export default function Contact() {
             id: 1,
             icon: <FaWhatsapp className="text-2xl text-green-600" />,
             title: "WhatsApp Hotline",
-            detail: "+62 812-3456-7890",
+            detail: "+62 817-610-929", // Nomor telepon resmi Komputec
             subDetail: "Respon cepat via Chat / Call",
-            href: "https://wa.me/6281234567890",
+            href: "https://wa.me/62817610929", // Tautan langsung ke WhatsApp tanpa tanda strip
             bgIcon: "bg-green-50 border-green-100"
         },
         {
             id: 2,
             icon: <FaEnvelope className="text-2xl text-blue-600" />,
             title: "Email Korespondensi",
-            detail: "info@komputechlift.co.id",
+            detail: "komputeclift@gmail.com",
             subDetail: "Untuk proposal & undangan tender",
-            href: "mailto:info@komputechlift.co.id",
+            href: "mailto:komputeclift@gmail.com",
             bgIcon: "bg-blue-50 border-blue-100"
         },
         {

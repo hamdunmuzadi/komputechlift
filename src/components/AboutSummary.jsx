@@ -66,7 +66,7 @@ export default function AboutSummary() {
                                     <FaBuilding className="text-2xl" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg tracking-wide">KOMPUTECHLIFT</h4>
+                                    <h4 className="font-bold text-lg tracking-wide">komputeclift</h4>
                                     <p className="text-xs text-gray-400">Headquarters & Engineering Core</p>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ export default function AboutSummary() {
                                 Mitra Rekayasa Lift Terpercaya untuk Keberlanjutan Struktur Anda
                             </h2>
                             <p className="text-gray-600 leading-relaxed font-normal">
-                                KOMPUTECHLIFT adalah perusahaan penyedia solusi transportasi vertikal yang berfokus penuh pada penyediaan, perancangan instalasi, pemeliharaan preventif, hingga modernisasi lift. Kami melayani kebutuhan sektor publik, kawasan pendidikan tinggi, area industri berat, hingga gedung pemerintahan.
+                                komputeclift adalah perusahaan penyedia solusi transportasi vertikal yang berfokus penuh pada penyediaan, perancangan instalasi, pemeliharaan preventif, hingga modernisasi lift. Kami melayani kebutuhan sektor publik, kawasan pendidikan tinggi, area industri berat, hingga gedung pemerintahan.
                             </p>
                         </motion.div>
 

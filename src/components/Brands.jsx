@@ -6,7 +6,7 @@ import { FaGlobe, FaMapMarkerAlt } from "react-icons/fa";
 export default function Brands() {
     // Data Placeholder Logo Brand Lokal
     const localBrands = [
-        { id: 1, name: "Komputech Component A", short: "KCA" },
+        { id: 1, name: "Komputec Component A", short: "KCA" },
         { id: 2, name: "Nusantara Elevator Parts", short: "NEP" },
         { id: 3, name: "Indo Lift Perkasa", short: "ILP" },
         { id: 4, name: "Sinergi Tekno Vertikal", short: "STV" },

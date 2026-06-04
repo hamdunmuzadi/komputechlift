@@ -42,11 +42,11 @@ export default function Footer() {
                                 KT
                             </div>
                             <span className="font-sans font-black text-lg tracking-tight">
-                                KOMPUTECH<span className="text-blue-500">LIFT</span>
+                                KOMPUTEC<span className="text-blue-500">LIFT</span>
                             </span>
                         </div>
                         <p className="text-xs text-slate-400 leading-relaxed font-normal max-w-sm">
-                            Penyedia solusi transportasi vertikal andal yang mengintegrasikan pengadaan unit rakitan lokal resmi (TKDN) maupun unit import CBU premium bersertifikasi K3 nasional.
+                            Layanan transportasi vertikal andal oleh <strong>CV. Faza Jaya Indonesia (FJI)</strong>. Kami mengintegrasikan pengadaan unit rakitan lokal resmi (TKDN) maupun unit import CBU premium bersertifikasi K3 nasional.
                         </p>
 
                         {/* SOSIAL MEDIA ICON HUB */}
@@ -101,7 +101,7 @@ export default function Footer() {
                                         rel="noopener noreferrer"
                                         className="leading-relaxed hover:text-blue-400 transition-colors font-semibold text-white block"
                                     >
-                                        Komputec Liftech
+                                        Komputec Lift
                                     </a>
                                     <p className="leading-relaxed text-slate-400">
                                         Kp. Citaman, Kec. Nagreg, Kabupaten Bandung, Jawa Barat 40397
@@ -114,8 +114,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <FaEnvelope className="text-blue-500 flex-none" />
-                                <a href="mailto:info@komputechlift.co.id" className="hover:text-blue-400 transition-colors">
-                                    info@komputechlift.co.id
+                                <a href="mailto:komputeclift@gmail.com" className="hover:text-blue-400 transition-colors">
+                                    komputeclift@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -141,8 +141,8 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center gap-3">
                             <FaEnvelope className="text-blue-500 flex-none" />
-                            <a href="mailto:info@komputechlift.co.id" className="hover:text-blue-400 transition-colors">
-                                info@komputechlift.co.id
+                            <a href="mailto:komputeclift@gmail.com" className="hover:text-blue-400 transition-colors">
+                                komputeclift@gmail.com
                             </a>
                         </li>
                     </ul>
@@ -151,7 +151,7 @@ export default function Footer() {
                 {/* BAGIAN BAWAH: COPYRIGHT & BACK TO TOP */}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
                     <p className="text-[11px] text-slate-500 font-normal text-center sm:text-left">
-                        &copy; {currentYear} KOMPUTECHLIFT. All rights reserved. Hak Cipta Dilindungi Undang-Undang.
+                        &copy; {currentYear} komputeclift. All rights reserved. Hak Cipta Dilindungi Undang-Undang.
                     </p>
 
                     {/* TOMBOL KEMBALI KE ATAS */}

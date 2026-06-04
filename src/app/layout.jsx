@@ -9,8 +9,8 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "KOMPUTECHLIFT | Solusi Transportasi Vertikal Premium",
-  description: "Penyedia layanan instalasi, maintenance, dan modernisasi lift lokal (TKDN) serta import CBU berkualitas tinggi bersertifikasi K3.",
+  title: "KOMPUTECLIFT | CV. Faza Jaya Indonesia (FJI)",
+  description: "Penyedia layanan instalasi, maintenance, dan modernisasi lift resmi oleh CV. Faza Jaya Indonesia (FJI). Produk lokal (TKDN) & import CBU bersertifikasi K3.",
 };
 
 export default function RootLayout({ children }) {

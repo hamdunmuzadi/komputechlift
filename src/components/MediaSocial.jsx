@@ -9,7 +9,7 @@ export default function MediaSocial() {
             id: 1,
             platform: "YouTube",
             icon: <FaYoutube className="text-3xl text-red-600" />,
-            handle: "KOMPUTECHLIFT Official",
+            handle: "komputeclift Official",
             desc: "Tonton dokumentasi uji kelayakan fungsi (test commission), proses instalasi struktur lift di lapangan, dan panduan edukasi K3 lift.",
             stats: "Video Edukasi & Proyek",
             actionText: "Buka Channel YouTube",

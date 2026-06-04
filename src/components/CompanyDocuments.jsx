@@ -9,10 +9,10 @@ export default function CompanyDocuments() {
             id: 1,
             type: "PDF",
             icon: <FaFilePdf className="text-3xl text-red-500" />,
-            title: "Company Profile KOMPUTECHLIFT",
-            desc: "Dokumen resmi profil perusahaan, struktur organisasi, daftar portofolio lengkap, serta lini produk lift lokal & import.",
+            title: "Company Profile CV. Faza Jaya Indonesia (FJI)",
+            desc: "Dokumen resmi legalitas hukum CV. FJI, struktur organisasi, daftar portofolio lengkap, serta lini produk resmi spesialisasi lift FUJI KOMPUTEC dan FUJI JPN.",
             fileSize: "4.8 MB",
-            downloadUrl: "#" // Ganti dengan path file asli di folder public, misal: "/docs/company-profile.pdf"
+            downloadUrl: "#"
         },
         {
             id: 2,

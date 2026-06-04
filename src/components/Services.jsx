@@ -10,29 +10,29 @@ export default function Services() {
             id: 1,
             icon: <FaTools className="text-2xl text-blue-600" />,
             title: "Instalasi Lift Baru",
-            desc: "Layanan perancangan, pengadaan unit, hingga pemasangan konstruksi lift secara kustom (lokal/import) dengan kalkulasi struktur presisi tinggi.",
-            features: ["Sertifikasi kelayakan K3", "Opsi teknologi hemat energi", "Kustomisasi interior kabin"]
+            desc: "Layanan perancangan, pengadaan unit, hingga pemasangan konstruksi lift secara kustom menggunakan sistem terintegrasi FUJI KOMPUTEC dan FUJI JPN.",
+            features: ["Sertifikasi kelayakan K3 Kemnaker", "Teknologi inverter hemat energi", "Kustomisasi interior kabin & shaft"]
         },
         {
             id: 2,
             icon: <FaWrench className="text-2xl text-blue-600" />,
             title: "Maintenance Berkala",
-            desc: "Pemeliharaan preventif secara rutin untuk menjaga keandalan sistem mekanis dan elektrikal, guna meminimalisir risiko terjadinya kerusakan fatal.",
-            features: ["Kunjungan terjadwal bulanan", "Pelumasan & kalibrasi rel", "Pengecekan sensor keamanan"]
+            desc: "Pemeliharaan preventif secara rutin untuk menjaga keandalan sistem mekanis dan elektrikal mikro-kontroler inverter FUJI guna meminimalisir risiko downtime.",
+            features: ["Kunjungan terjadwal bulanan", "Kalibrasi sensor berat & lantai", "Pengecekan modul safety gear"]
         },
         {
             id: 3,
             icon: <FaHistory className="text-2xl text-blue-600" />,
             title: "Modernisasi Sistem",
-            desc: "Pembaruan komponen lift lama (panel kontrol, inverter, motor penggerak) ke teknologi cerdas terbaru tanpa perlu mengganti seluruh struktur fisik lift.",
-            features: ["Peningkatan kecepatan respon", "Hemat konsumsi listrik", "Tampilan indikator digital baru"]
+            desc: "Pembaruan komponen lift lama (panel kontrol, inverter, motor penggerak) ke sistem kontrol cerdas digital FUJI JPN terbaru tanpa membongkar total struktur fisik.",
+            features: ["Peningkatan kecepatan respon", "Modul hemat konsumsi listrik", "Tampilan indikator digital baru"]
         },
         {
             id: 4,
-            icon: <FaWrench className="text-2xl text-blue-600" />, // Menggunakan icon engineering standar yang aman
+            icon: <FaWrench className="text-2xl text-blue-600" />,
             title: "Repair & Troubleshooting",
-            desc: "Layanan penanganan darurat dan perbaikan cepat oleh tim teknisi ahli siap panggil untuk mengatasi malfungsi sistem lift pada gedung Anda.",
-            features: ["Analisis kerusakan akurat", "Suku cadang original ready", "Response team tanggap"]
+            desc: "Layanan penanganan darurat dan perbaikan cepat oleh teknisi spesialis papan kontrol FUJI untuk mengatasi malfungsi sistem lift pada gedung Anda.",
+            features: ["Analisis error code akurat", "Suku cadang original ready stock", "Response team tanggap 24/7"]
         }
     ];
 
