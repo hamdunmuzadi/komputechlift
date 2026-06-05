@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FaTools, FaWrench, FaHistory, FaCheckCircle } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -8,6 +9,7 @@ export default function Services() {
     const servicesData = [
         {
             id: 1,
+            slug: "instalasi-lift",
             icon: <FaTools className="text-2xl text-blue-600" />,
             title: "Instalasi Lift Baru",
             desc: "Layanan perancangan, pengadaan unit, hingga pemasangan konstruksi lift secara kustom menggunakan sistem terintegrasi FUJI KOMPUTEC dan FUJI JPN.",
@@ -15,6 +17,7 @@ export default function Services() {
         },
         {
             id: 2,
+            slug: "maintenance-lift",
             icon: <FaWrench className="text-2xl text-blue-600" />,
             title: "Maintenance Berkala",
             desc: "Pemeliharaan preventif secara rutin untuk menjaga keandalan sistem mekanis dan elektrikal mikro-kontroler inverter FUJI guna meminimalisir risiko downtime.",
@@ -22,6 +25,7 @@ export default function Services() {
         },
         {
             id: 3,
+            slug: "modernisasi-lift",
             icon: <FaHistory className="text-2xl text-blue-600" />,
             title: "Modernisasi Sistem",
             desc: "Pembaruan komponen lift lama (panel kontrol, inverter, motor penggerak) ke sistem kontrol cerdas digital FUJI JPN terbaru tanpa membongkar total struktur fisik.",
@@ -29,6 +33,7 @@ export default function Services() {
         },
         {
             id: 4,
+            slug: "rekondisi-lift",
             icon: <FaWrench className="text-2xl text-blue-600" />,
             title: "Repair & Troubleshooting",
             desc: "Layanan penanganan darurat dan perbaikan cepat oleh teknisi spesialis papan kontrol FUJI untuk mengatasi malfungsi sistem lift pada gedung Anda.",
@@ -80,44 +85,49 @@ export default function Services() {
                     viewport={{ once: true, margin: "-100px" }}
                 >
                     {servicesData.map((service) => (
-                        <motion.div
+                        <Link
                             key={service.id}
-                            variants={cardVariants}
-                            whileHover={{ y: -6 }} // Hover Lift Effect
-                            className="bg-gray-50 border border-gray-100 rounded-2xl p-8 lg:p-10 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-200 flex flex-col justify-between group"
+                            href={`/services/${service.slug}`}
+                            className="block h-full"
                         >
-                            <div className="space-y-6">
-                                {/* Baris Atas: Icon & Tombol Pelajari Aksen */}
-                                <div className="flex justify-between items-center">
-                                    <div className="bg-white border border-gray-100 p-4 inline-block rounded-xl shadow-sm">
-                                        {service.icon}
-                                    </div>
-                                    <span className="text-gray-300 group-hover:text-blue-600 transition-colors duration-300">
-                                        <FiArrowRight className="text-xl transform group-hover:translate-x-1 transition-transform" />
-                                    </span>
-                                </div>
-
-                                {/* Judul & Deskripsi */}
-                                <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed font-normal">
-                                        {service.desc}
-                                    </p>
-                                </div>
-
-                                {/* Fitur / Poin Keunggulan Kecil di Dalam Kartu */}
-                                <div className="pt-4 border-t border-gray-200/60 grid sm:grid-cols-1 gap-2">
-                                    {service.features.map((feat, idx) => (
-                                        <div key={idx} className="flex items-center gap-2 text-xs text-gray-700 font-medium">
-                                            <FaCheckCircle className="text-blue-500 flex-none text-[10px]" />
-                                            <span>{feat}</span>
+                            <motion.div
+                                variants={cardVariants}
+                                whileHover={{ y: -6 }}
+                                className="bg-gray-50 border border-gray-100 rounded-2xl p-8 lg:p-10 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-200 flex flex-col justify-between group h-full"
+                            >
+                                <div className="space-y-6">
+                                    {/* Baris Atas: Icon & Tombol Pelajari Aksen */}
+                                    <div className="flex justify-between items-center">
+                                        <div className="bg-white border border-gray-100 p-4 inline-block rounded-xl shadow-sm">
+                                            {service.icon}
                                         </div>
-                                    ))}
+                                        <span className="text-gray-300 group-hover:text-blue-600 transition-colors duration-300">
+                                            <FiArrowRight className="text-xl transform group-hover:translate-x-1 transition-transform" />
+                                        </span>
+                                    </div>
+
+                                    {/* Judul & Deskripsi */}
+                                    <div className="space-y-3">
+                                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm leading-relaxed font-normal">
+                                            {service.desc}
+                                        </p>
+                                    </div>
+
+                                    {/* Fitur / Poin Keunggulan Kecil di Dalam Kartu */}
+                                    <div className="pt-4 border-t border-gray-200/60 grid sm:grid-cols-1 gap-2">
+                                        {service.features.map((feat, idx) => (
+                                            <div key={idx} className="flex items-center gap-2 text-xs text-gray-700 font-medium">
+                                                <FaCheckCircle className="text-blue-500 flex-none text-[10px]" />
+                                                <span>{feat}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        </Link>
                     ))}
                 </motion.div>
 

@@ -1,20 +1,55 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isServiceOpen, setIsServiceOpen] = useState(false);
+
+    const services = [
+        {
+            name: "Home Elevator",
+            href: "/services/home-elevator",
+        },
+        {
+            name: "Instalasi Lift",
+            href: "/services/instalasi-lift",
+        },
+        {
+            name: "Lift Barang",
+            href: "/services/lift-barang",
+        },
+        {
+            name: "Lift Makanan",
+            href: "/services/lift-makanan",
+        },
+        {
+            name: "Maintenance Lift",
+            href: "/services/maintenance-lift",
+        },
+        {
+            name: "Modernisasi Lift",
+            href: "/services/modernisasi-lift",
+        },
+        {
+            name: "Rekondisi Lift",
+            href: "/services/rekondisi-lift",
+        },
+    ];
 
     const navLinks = [
-        { name: "Layanan", href: "#services" },
-        // { name: "Keunggulan", href: "#why-choose-us" },
-        { name: "Brand", href: "#brands" },
-        { name: "Project", href: "#projects" },
-        // { name: "Dokumen", href: "#documents" },
+        { name: "Brand", href: "/#brands" },
+        { name: "Project", href: "/#projects" },
+        { name: "Media", href: "/#media" },
+        { name: "Konsultasi", href: "/#contact" },
     ];
+
+
 
     // Mengatur efek background navbar saat di-scroll
     useEffect(() => {
@@ -40,7 +75,7 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
 
                     {/* LOGO BRAND */}
-                    <a href="#" className="flex items-center gap-2.5 group">
+                    <Link href="/" className="flex items-center gap-2.5 group">
                         {/* <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-xs transition-transform group-hover:scale-105">
                             KT
                         </div> */}
@@ -51,24 +86,146 @@ export default function Navbar() {
                             </span>
                             <p className="text-black text-xs">CV. Faza Jaya Indonesia</p>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* DESKTOP NAVIGATION */}
                     <div className="hidden md:flex items-center gap-8">
-                        {navLinks.map((link, idx) => (
-                            <a
-                                key={idx}
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
                                 href={link.href}
-                                className="text-xs font-bold text-gray-600 hover:text-blue-600 tracking-wide uppercase transition-colors duration-200"
+                                className="text-xs font-bold text-gray-600 hover:text-blue-600 tracking-wide uppercase"
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
+
+                        {/* DROPDOWN LAYANAN */}
+                        <div
+                            className="relative"
+                            onMouseEnter={() => setIsServiceOpen(true)}
+                            onMouseLeave={() => setIsServiceOpen(false)}
+                        >
+                            {/* Tombol */}
+                            <button
+                                className="flex items-center gap-2 text-xs font-bold text-gray-600 hover:text-blue-600 tracking-wide uppercase transition-all duration-200 cursor-pointer"
+                            >
+                                Layanan
+
+                                <FaChevronDown
+                                    className={`text-[10px] transition-transform duration-300 ${isServiceOpen ? "rotate-180" : ""
+                                        }`}
+                                />
+                            </button>
+
+                            {/* Hover Bridge */}
+                            <div className="absolute top-full left-0 h-4 w-full" />
+
+                            <AnimatePresence>
+                                {isServiceOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 12 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 12 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="
+                    absolute
+                    top-full
+                    left-0
+                    mt-4
+                    w-96
+                    overflow-hidden
+                    rounded-2xl
+                    border
+                    border-gray-100
+                    bg-white/95
+                    backdrop-blur-md
+                    shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+                    z-50
+                "
+                                    >
+                                        {/* Header */}
+                                        <div className="border-b border-gray-100 bg-linear-to-r from-blue-50 to-white px-6 py-5">
+                                            <h3 className="font-bold text-gray-900">
+                                                Layanan Lift & Elevator
+                                            </h3>
+
+                                            <p className="mt-1 text-sm text-gray-500">
+                                                Solusi instalasi, modernisasi, maintenance, dan
+                                                perbaikan lift untuk berbagai kebutuhan.
+                                            </p>
+                                        </div>
+
+                                        {/* Menu */}
+                                        <div className="grid grid-cols-2 gap-2 p-3">
+                                            {services.map((service) => (
+                                                <Link
+                                                    key={service.href}
+                                                    href={service.href}
+                                                    className="
+                                group
+                                flex
+                                items-center
+                                justify-between
+                                rounded-xl
+                                px-4
+                                py-3
+                                transition-all
+                                duration-200
+                                hover:bg-blue-50
+                                hover:shadow-sm
+                            "
+                                                >
+                                                    <div>
+                                                        <p className="text-sm font-semibold text-gray-800 group-hover:text-blue-600">
+                                                            {service.name}
+                                                        </p>
+
+                                                        <p className="text-xs text-gray-500 mt-0.5">
+                                                            Pelajari layanan
+                                                        </p>
+                                                    </div>
+
+                                                    <span
+                                                        className="
+                                    translate-x-0
+                                    text-blue-600
+                                    opacity-0
+                                    transition-all
+                                    duration-200
+                                    group-hover:translate-x-1
+                                    group-hover:opacity-100
+                                "
+                                                    >
+                                                        →
+                                                    </span>
+                                                </Link>
+                                            ))}
+                                        </div>
+
+                                        {/* Footer */}
+                                        <div className="border-t border-gray-100 bg-gray-50 px-6 py-4">
+                                            <Link
+                                                href="/"
+                                                className="
+                            text-sm
+                            font-semibold
+                            text-blue-600
+                            hover:text-blue-700
+                        "
+                                            >
+                                                Kembali Ke Halaman Utama →
+                                            </Link>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
                     </div>
 
                     {/* DESKTOP CTA BUTTON */}
                     <div className="hidden md:block">
-                        <a
+                        <Link
                             href="https://wa.me/62817610929"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -76,7 +233,7 @@ export default function Navbar() {
                         >
                             <FaPhoneAlt className="text-[10px]" />
                             <span>Hubungi CV. FJI</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* MOBILE MENU BUTTON */}
@@ -98,18 +255,35 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed top-17px left-0 right-0 bg-white border-b border-gray-100 z-30 shadow-xl p-6 md:hidden flex flex-col gap-4"
+                        className={`fixed left-0 right-0 bg-white border-b border-gray-100 z-30 shadow-xl p-6 md:hidden flex flex-col gap-4 transition-all duration-300 ${isScrolled ? "top-16" : "top-20"
+                            }`}
                     >
                         {navLinks.map((link, idx) => (
-                            <a
+                            <Link
                                 key={idx}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-sm font-bold text-gray-700 hover:text-blue-600 uppercase tracking-wide py-2 border-b border-gray-50 last:border-none"
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
+                        <div className="border-b border-gray-100 pb-2">
+                            <p className="text-xs font-bold text-gray-400 uppercase mb-2">
+                                Layanan
+                            </p>
+
+                            {services.map((service) => (
+                                <a
+                                    key={service.href}
+                                    href={service.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="block py-2 text-sm font-medium text-gray-700 hover:text-blue-600"
+                                >
+                                    {service.name}
+                                </a>
+                            ))}
+                        </div>
                         <a
                             href="https://wa.me/62817610929"
                             target="_blank"

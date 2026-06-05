@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero"; // 1. Pastikan komponen Hero diimpor kembali
+import Hero from "../components/Hero"; //
 import Services from "../components/Services";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Brands from "../components/Brands";
