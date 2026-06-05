@@ -33,21 +33,24 @@ export default function Navbar() {
         <>
             <nav
                 className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
-                        ? "bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm py-4"
-                        : "bg-transparent py-6"
+                    ? "bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm py-4"
+                    : "bg-transparent py-6"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
 
                     {/* LOGO BRAND */}
                     <a href="#" className="flex items-center gap-2.5 group">
-                        <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-xs transition-transform group-hover:scale-105">
+                        {/* <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-xs transition-transform group-hover:scale-105">
                             KT
+                        </div> */}
+                        <div className="flex flex-col">
+                            <span className={`font-sans font-black text-base tracking-tight transition-colors ${isScrolled ? "text-gray-900" : "text-gray-900 sm:text-gray-900"
+                                }`}>
+                                KOMPUTEC<span className="text-blue-600">LIFT</span>
+                            </span>
+                            <p className="text-black text-xs">CV. Faza Jaya Indonesia</p>
                         </div>
-                        <span className={`font-sans font-black text-base tracking-tight transition-colors ${isScrolled ? "text-gray-900" : "text-gray-900 sm:text-gray-900"
-                            }`}>
-                            KOMPUTEC<span className="text-blue-600">LIFT</span>
-                        </span>
                     </a>
 
                     {/* DESKTOP NAVIGATION */}

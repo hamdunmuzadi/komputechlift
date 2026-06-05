@@ -137,7 +137,7 @@ export default function Contact() {
                         </p>
                         <div className="pt-4">
                             <a
-                                href="https://wa.me/6281234567890"
+                                href="https://wa.me/62817610929"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-blue-600/20 transition-all duration-300 hover:scale-[1.02]"
@@ -157,7 +157,7 @@ export default function Contact() {
 
                 {/* Tombol Utama */}
                 <motion.a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/62817610929"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}

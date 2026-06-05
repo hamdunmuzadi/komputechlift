@@ -29,7 +29,7 @@ export default function Projects() {
             client: "Project Teknis",
             desc: "Pemasangan panel kontrol baru VVVF untuk meningkatkan efisiensi energi dan keamanan operasional lift lama Anda menjadi standar modern yang lebih responsif.",
             price: "Hubungi Kontak",
-            shortName: "REKONDISI",
+            shortName: "REKONDISI LIFT",
             images: [
                 "/image/RekondisiLift1.jpeg",
                 "/image/RekondisiLift2.jpeg",
@@ -42,6 +42,23 @@ export default function Projects() {
         },
         {
             id: 2,
+            category: "passenger",
+            title: "Premium Home Elevator",
+            client: "Residensial Pribadi",
+            desc: "Instalasi lift rumah mewah berteknologi FUJI JPN. Dirancang ultra sunyi, hemat ruang (machine-room-less), dan menyatu elegan dengan interior hunian.",
+            price: "Hubungi Kontak",
+            shortName: "ELEVATOR",
+            images: [
+                "/image/elevator1.jpeg",
+                "/image/elevator2.jpeg",
+                "/image/elevator3.jpeg",
+                "/image/elevator4.jpeg",
+                "/image/elevator5.jpeg",
+                "/image/elevator6.jpeg"
+            ]
+        },
+        {
+            id: 3,
             category: "freight",
             title: "Lift Barang Rope Hoist Mitsubishi (4 Lantai)",
             client: "Kustom Sangkar Premium",
@@ -59,7 +76,7 @@ export default function Projects() {
             ]
         },
         {
-            id: 3,
+            id: 4,
             category: "freight",
             title: "Instalasi Lift Barang Heavy-Duty",
             client: "PT. CAR",
@@ -77,7 +94,7 @@ export default function Projects() {
             ]
         },
         {
-            id: 4,
+            id: 5,
             category: "freight",
             title: "Lift Barang Struktur Cargo Gate",
             client: "PT Natura Boga Perisa",
@@ -85,12 +102,16 @@ export default function Projects() {
             price: "Hubungi Kontak",
             shortName: "PT-NATURA",
             images: [
-                "/image/LiftBarangHope1.jpeg",
-                "/image/LiftPTCAR4.jpeg"
+                "/image/PTnatura4.jpeg",
+                "/image/PTnatura1.jpeg",
+                "/image/PTnatura2.jpeg",
+                "/image/PTnatura3.jpeg",
+                "/image/PTnatura5.jpeg",
+                "/image/PTnatura6.jpeg"
             ]
         },
         {
-            id: 5,
+            id: 6,
             category: "passenger",
             title: "Premium Home Elevator",
             client: "Residensial Pribadi",
@@ -111,31 +132,31 @@ export default function Projects() {
             ]
         },
         {
-            id: 6,
-            category: "freight",
-            title: "Dumbwaiter (Lift Makanan & Dokumen)",
-            client: "Restoran & Rumah Sakit",
-            desc: "Lift vertikal berukuran kompak berbahan stainless steel standar higienis. Khusus untuk mobilitas cepat barang kecil, makanan, atau dokumen antar lantai.",
+            id: 7,
+            category: "passenger",
+            title: "Premium Home Elevator (Type B)",
+            client: "Residensial Pribadi",
+            desc: "Instalasi lift rumah mewah berteknologi FUJI JPN. Dirancang ultra sunyi, hemat ruang (machine-room-less), dan menyatu elegan dengan interior hunian.",
             price: "Hubungi Kontak",
-            shortName: "DUMBWAITER",
+            shortName: "HOME-ELEVATOR-2",
             images: [
-                "/image/Dumbwaiter1.jpeg",
-                "/image/Dumbwaiter2.jpeg",
-                "/image/Dumbwaiter3.jpeg",
-                "/image/Dumbwaiter4.jpeg",
-                "/image/Dumbwaiter5.jpeg",
-                "/image/Dumbwaiter6.jpeg",
-                "/image/Dumbwaiter7.jpeg",
-                "/image/Dumbwaiter8.jpeg",
-                "/image/Dumbwaiter9.jpeg"
+                "/image/HomeElevaroR1.jpeg",
+                "/image/HomeElevaroR2.jpeg",
+                "/image/HomeElevaroR3.jpeg",
+                "/image/HomeElevaroR4.jpeg",
+                "/image/HomeElevaroR5.jpeg",
+                "/image/HomeElevaroR6.jpeg",
+                "/image/HomeElevaroR7.jpeg",
+                "/image/HomeElevaroR8.jpeg",
+                "/image/HomeElevaroR9.jpeg"
             ]
         },
         {
-            id: 7,
-            category: "freight",
-            title: "Dumbwaiter (Lift Makanan & Dokumen)",
-            client: "Restoran & Rumah Sakit",
-            desc: "Lift vertikal berukuran kompak berbahan stainless steel standar higienis. Khusus untuk mobilitas cepat barang kecil, makanan, atau dokumen antar lantai.",
+            id: 8,
+            category: "freight", // DIUBAH ke freight karena unit ini adalah Dumbwaiter (Lift Makanan/Barang Kecil)
+            title: "Service Lift / Dumbwaiter Premium", // DIUBAH agar sesuai dengan jenis unit
+            client: "Restoran & Komersial", // DIUBAH agar lebih relevan dengan fungsi dumbwaiter
+            desc: "Instalasi lift spesialisasi barang kecil/makanan (dumbwaiter) berbahan stainless steel standar f&b. Sangat efisien untuk kebutuhan restoran, cafe, atau rumah sakit.", // DIUBAH agar relevan
             price: "Hubungi Kontak",
             shortName: "DUMBWAITER",
             images: [
@@ -202,12 +223,12 @@ export default function Projects() {
                 </div>
 
                 {/* BUTTON FILTER */}
-                <div className="flex flex-wrap justify-center items-center gap-3 pt-4">
+                <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none items-center gap-3 px-4 max-w-full md:flex-wrap md:justify-center md:px-0">
                     {categories.map((cat) => (
                         <button
                             key={cat.id}
                             onClick={() => handleCategoryChange(cat.id)}
-                            className={`px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 border ${filter === cat.id
+                            className={`whitespace-nowrap snap-center px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 border ${filter === cat.id
                                 ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/10"
                                 : "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100"
                                 }`}
@@ -218,7 +239,8 @@ export default function Projects() {
                 </div>
 
                 {/* GRID GALERI */}
-                <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-6">
+                {/* 1. MENGUBAH GRID UTAMA: Menambahkan 'grid-cols-2' untuk mobile, memperkecil gap menjadi 'gap-3' di mobile */}
+                <motion.div layout className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 pt-6 px-2 md:px-0">
                     <AnimatePresence mode="popLayout">
                         {displayedProjects.map((project) => (
                             <motion.div
@@ -233,10 +255,10 @@ export default function Projects() {
                                     setActiveProject(project);
                                     setActiveImageIndex(0);
                                 }}
-                                className="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col group cursor-pointer"
+                                className="bg-gray-50 border border-gray-100 rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col group cursor-pointer"
                             >
-                                {/* CARD VISUAL AREA (Membaca gambar ke-1 sebagai cover) */}
-                                <div className="h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center text-white">
+                                {/* CARD VISUAL AREA: Menyesuaikan tinggi gambar dari h-56 menjadi h-36 di mobile (md:h-56) */}
+                                <div className="h-36 md:h-56 bg-slate-900 relative overflow-hidden flex items-center justify-center text-white">
                                     <div className="absolute inset-0 bg-linear-to-br from-blue-900/20 to-slate-900/60 pointer-events-none z-10" />
 
                                     <img
@@ -245,40 +267,46 @@ export default function Projects() {
                                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 z-0"
                                     />
 
-                                    <div className="absolute bottom-4 left-4 z-20 font-mono font-black text-lg tracking-wider text-white bg-slate-950/60 backdrop-blur-sm px-3 py-1 rounded-lg border border-white/10 uppercase">
+                                    {/* Badge SHORTNAME: Disesuaikan ukuran teks & padding-nya agar muat di mobile */}
+                                    <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4 z-20 font-mono font-black text-[10px] md:text-lg tracking-wider text-white bg-slate-950/60 backdrop-blur-sm px-2 py-0.5 md:px-3 md:py-1 rounded-md md:rounded-lg border border-white/10 uppercase">
                                         {project.shortName}
                                     </div>
 
-                                    <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-sm border border-gray-100 text-gray-900 font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-md shadow-sm flex items-center gap-1.5">
+                                    {/* Badge KATEGORI: Di mobile hanya memunculkan Icon saja untuk menghemat ruang layar */}
+                                    <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 bg-white/90 backdrop-blur-sm border border-gray-100 text-gray-900 font-bold text-[10px] uppercase tracking-wider p-1.5 md:px-3 md:py-1 rounded-md shadow-sm flex items-center gap-1.5">
                                         {project.category === "passenger" && <FaBuilding className="text-blue-600" />}
                                         {project.category === "freight" && <FaBuilding className="text-amber-600" />}
                                         {project.category === "modernization" && <FaTools className="text-emerald-600" />}
-                                        <span>{project.category}</span>
+                                        <span className="hidden md:inline">{project.category}</span>
                                     </div>
 
-                                    <div className="absolute top-4 right-4 z-20 bg-slate-900/80 backdrop-blur-sm text-white font-semibold text-[11px] px-2.5 py-1 rounded-md border border-white/10">
+                                    {/* Badge HARGA: Disesuaikan ukurannya di mobile */}
+                                    <div className="absolute top-2 right-2 md:top-4 md:right-4 z-20 bg-slate-900/80 backdrop-blur-sm text-white font-semibold text-[9px] md:text-[11px] px-2 py-0.5 md:px-2.5 md:py-1 rounded-md border border-white/10">
                                         {project.price}
                                     </div>
                                 </div>
 
-                                {/* CARD CONTENT */}
-                                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                                    <div className="space-y-2">
-                                        <span className="text-[11px] font-bold text-blue-600 uppercase tracking-wider block">
+                                {/* CARD CONTENT: Mengubah padding luar dari p-6 menjadi p-3 di mobile (md:p-6) */}
+                                <div className="p-3 md:p-6 flex-1 flex flex-col justify-between space-y-3 md:space-y-4">
+                                    <div className="space-y-1 md:space-y-2">
+                                        <span className="text-[9px] md:text-[11px] font-bold text-blue-600 uppercase tracking-wider block">
                                             Klien: {project.client}
                                         </span>
-                                        <h3 className="text-base font-extrabold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 min-h-12">
+                                        {/* Judul: Mengecilkan ukuran font di mobile (text-xs md:text-base) dan tinggi minimalnya */}
+                                        <h3 className="text-xs md:text-base font-extrabold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 min-h-8 md:min-h-12">
                                             {project.title}
                                         </h3>
-                                        <p className="text-gray-600 text-xs leading-relaxed font-normal pt-2 border-t border-gray-200/60 line-clamp-3">
+                                        {/* Deskripsi: Disembunyikan di layar mobile yang sangat kecil agar card tetap simetris, muncul kembali di layar desktop */}
+                                        <p className="hidden md:line-clamp-3 text-gray-600 text-xs leading-relaxed font-normal pt-2 border-t border-gray-200/60">
                                             {project.desc}
                                         </p>
                                     </div>
 
-                                    <div className="pt-2">
-                                        <span className="w-full bg-white group-hover:bg-blue-600 border border-gray-200 group-hover:border-blue-600 text-gray-700 group-hover:text-white font-bold text-xs py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-sm">
-                                            <span>Lihat Detail & Galeri</span>
-                                            <FaAngleRight className="text-sm opacity-70 group-hover:translate-x-1 transition-transform" />
+                                    {/* BUTTON: Mengurangi padding di mobile agar teks 'Lihat Detail' tidak patah baris */}
+                                    <div className="pt-1 md:pt-2">
+                                        <span className="w-full bg-white group-hover:bg-blue-600 border border-gray-200 group-hover:border-blue-600 text-gray-700 group-hover:text-white font-bold text-[10px] md:text-xs py-2 px-2 md:py-3 md:px-4 rounded-lg md:rounded-xl transition-all duration-300 flex items-center justify-center gap-1 md:gap-2 shadow-sm">
+                                            <span>Lihat Detail</span>
+                                            <FaAngleRight className="text-xs opacity-70 group-hover:translate-x-1 transition-transform" />
                                         </span>
                                     </div>
                                 </div>
@@ -412,7 +440,7 @@ export default function Projects() {
                                     {/* WHATSAPP CTA LINK */}
                                     <div className="pt-6 md:pt-0 mt-6">
                                         <a
-                                            href={`https://wa.me/6281234567890?text=Halo%20KOMPUTECHLIFT,%20saya%20tertarik%20dengan%20spesifikasi%20teknis%20${encodeURIComponent(activeProject.title)}`}
+                                            href={`https://wa.me/62817610929?text=Halo%20KOMPUTECHLIFT,%20saya%20tertarik%20dengan%20spesifikasi%20teknis%20${encodeURIComponent(activeProject.title)}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-md shadow-emerald-600/10 hover:shadow-emerald-600/20"

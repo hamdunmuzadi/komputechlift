@@ -78,7 +78,7 @@ export default function Hero() {
                     {/* CTA Buttons */}
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                         <a
-                            href="https://wa.me/628xxxxxxxxxx"
+                            href="https://wa.me/62817610929"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-base shadow-md hover:bg-blue-700 transition-all duration-300"

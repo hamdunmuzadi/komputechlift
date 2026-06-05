@@ -16,8 +16,8 @@ export default function Footer() {
 
     const socialLinks = [
         { id: 1, icon: <FaYoutube />, href: "https://youtube.com", label: "YouTube" },
-        { id: 2, icon: <FaInstagram />, href: "https://instagram.com/rahmat.elevator", label: "Instagram" },
-        { id: 3, icon: <FaWhatsapp />, href: "https://wa.me/6281234567890", label: "WhatsApp" },
+        { id: 2, icon: <FaInstagram />, href: "https://www.instagram.com/rahmanelevators/", label: "Instagram" },
+        { id: 3, icon: <FaWhatsapp />, href: "https://wa.me/62817610929", label: "WhatsApp" },
     ];
 
     const scrollToTop = () => {
