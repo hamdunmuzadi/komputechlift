@@ -13,31 +13,31 @@ export default function Navbar() {
 
     const services = [
         {
-            name: "Home Elevator",
+            name: "HOME ELEVATOR",
             href: "/services/home-elevator",
         },
         {
-            name: "Instalasi Lift",
+            name: "INSTAKASI LIFT",
             href: "/services/instalasi-lift",
         },
         {
-            name: "Lift Barang",
+            name: "LIFT BARANG",
             href: "/services/lift-barang",
         },
         {
-            name: "Lift Makanan",
+            name: "LIFT MAKANAN",
             href: "/services/lift-makanan",
         },
         {
-            name: "Maintenance Lift",
+            name: "MAINTENANCE LIFT",
             href: "/services/maintenance-lift",
         },
         {
-            name: "Modernisasi Lift",
+            name: "MODERENISASI LIFT",
             href: "/services/modernisasi-lift",
         },
         {
-            name: "Rekondisi Lift",
+            name: "REKONDISI LIFT",
             href: "/services/rekondisi-lift",
         },
     ];
@@ -258,6 +258,13 @@ export default function Navbar() {
                         className={`fixed left-0 right-0 bg-white border-b border-gray-100 z-30 shadow-xl p-6 md:hidden flex flex-col gap-4 transition-all duration-300 ${isScrolled ? "top-16" : "top-20"
                             }`}
                     >
+                        {/* <Link
+                            href={"/"}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-sm font-bold text-gray-700 hover:text-blue-600 uppercase tracking-wide py-2 border-b border-gray-50 last:border-none"
+                        >
+                            BERANDA
+                        </Link> */}
                         {navLinks.map((link, idx) => (
                             <Link
                                 key={idx}
@@ -274,14 +281,14 @@ export default function Navbar() {
                             </p>
 
                             {services.map((service) => (
-                                <a
+                                <Link
                                     key={service.href}
                                     href={service.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="block py-2 text-sm font-medium text-gray-700 hover:text-blue-600"
                                 >
                                     {service.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                         <a
