@@ -38,9 +38,9 @@ export default function Footer() {
                     <div className="md:col-span-5 space-y-5">
                         <div className="flex items-center gap-2.5 text-white">
                             {/* Placeholder Logo Grafik */}
-                            <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-sm">
+                            {/* <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-sm">
                                 KT
-                            </div>
+                            </div> */}
                             <span className="font-sans font-black text-lg tracking-tight">
                                 KOMPUTEC<span className="text-blue-500">LIFT</span>
                             </span>

@@ -16,8 +16,8 @@ export const metadata = {
     template: "%s | KOMPUTECLIFT",
   },
 
-  description:
-    "KOMPUTECLIFT by CV. Faza Jaya Indonesia (FJI) melayani pembuatan home elevator, lift makanan (dumbwaiter), lift barang, instalasi lift baru, maintenance, modernisasi, dan rekondisi lift untuk rumah, hotel, restoran, perkantoran, dan industri di Indonesia.",
+ description:
+  "Jasa instalasi lift profesional untuk rumah, hotel, restoran, rumah sakit, universitas, gedung perkantoran dan industri. Melayani home elevator, lift barang, lift makanan (dumbwaiter), maintenance, modernisasi dan rekondisi lift di Bandung dan seluruh Indonesia.",
 
   keywords: [
     "home elevator",

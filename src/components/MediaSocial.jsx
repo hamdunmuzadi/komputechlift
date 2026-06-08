@@ -13,7 +13,7 @@ export default function MediaSocial() {
             desc: "Tonton dokumentasi uji kelayakan fungsi (test commission), proses instalasi struktur lift di lapangan, dan panduan edukasi K3 lift.",
             stats: "Video Edukasi & Proyek",
             actionText: "Buka Channel YouTube",
-            href: "https://youtube.com", // Ganti dengan link youtube asli perusahaan
+            href: "https://youtube.com/@rahmatelevator?si=5jvIcCXatekM0LbS",
             previewIcon: <FaPlayCircle className="text-5xl text-white/80 group-hover:text-red-500 group-hover:scale-110 transition-all duration-300" />
         },
         {
@@ -40,7 +40,7 @@ export default function MediaSocial() {
 
     return (
         <section id="media" className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-6 w-full space-y-16">
+            <div className="max-w-5xl mx-auto px-6 w-full space-y-16">
 
                 {/* HEADER SECTION */}
                 <div className="max-w-3xl mx-auto text-center space-y-4">
@@ -66,7 +66,7 @@ export default function MediaSocial() {
                     {socialChannels.map((item) => (
                         <div
                             key={item.id}
-                            className="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+                            className=" bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
                         >
                             {/* 1. AREA PREVIEW VISUAL MODERN */}
                             <div className="h-48 bg-slate-900 relative flex items-center justify-center overflow-hidden">

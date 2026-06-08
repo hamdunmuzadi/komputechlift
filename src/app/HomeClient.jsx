@@ -7,10 +7,8 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Brands from "../components/Brands";
 import Projects from "../components/Projects";
 import TrustedBy from "../components/TrustedBy";
-import CompanyDocuments from "../components/CompanyDocuments";
-import MediaSocial from "../components/MediaSocial";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import CommunicationHub from "@/components/CommunicationHub";
 
 export default function HomeClient() {
     return (
@@ -28,9 +26,7 @@ export default function HomeClient() {
                 <Brands />
                 <Projects />
                 <TrustedBy />
-                {/* <CompanyDocuments /> */}
-                <MediaSocial />
-                <Contact />
+                <CommunicationHub />
             </main>
 
             <Footer />

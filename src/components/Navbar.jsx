@@ -43,10 +43,10 @@ export default function Navbar() {
     ];
 
     const navLinks = [
-        { name: "Brand", href: "/#brands" },
+        { name: "Brand", href: "/" },
         { name: "Project", href: "/#projects" },
-        { name: "Media", href: "/#media" },
-        { name: "Konsultasi", href: "/#contact" },
+        // { name: "Media", href: "/#media" },
+        { name: "Konsultasi", href: "/#konsultasi" },
     ];
 
 
