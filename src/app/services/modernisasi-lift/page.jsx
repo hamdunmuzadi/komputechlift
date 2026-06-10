@@ -5,10 +5,12 @@ import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    // Menambahkan kata "Upgrade", "Elevator", dan "Lama" untuk memperluas jangkauan pencarian
-    title: "Jasa Modernisasi & Upgrade Lift Lama (Elevator) | KOMPUTECLIFT",
+    title: "Modernisasi Lift dan Upgrade Sistem Elevator",
     description:
-        "Jasa modernisasi dan upgrade lift lama untuk meningkatkan keamanan, efisiensi energi (hemat listrik), dan performa tanpa harus membongkar unit lift secara total.",
+        "Layanan modernisasi lift untuk meningkatkan keamanan, efisiensi dan performa sistem elevator pada berbagai jenis bangunan.",
+    alternates: {
+        canonical: "/services/modernisasi-lift",
+    },
 };
 
 export default function ModernisasiLiftPage() {

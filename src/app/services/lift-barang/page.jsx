@@ -5,10 +5,12 @@ import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    // Menambahkan kata "Jasa Pembuatan", "Pemasangan", dan "Terpercaya" untuk meningkatkan Click-Through Rate (CTR)
-    title: "Jasa Pembuatan & Pemasangan Lift Barang (Cargo Lift) | KOMPUTECLIFT",
+    title: "Lift Barang Industri dan Gudang",
     description:
-        "KOMPUTECLIFT melayani jasa pembuatan dan pemasangan lift barang (cargo lift) custom untuk gudang, pabrik, dan ruko. Konstruksi kokoh, harga terjangkau, dan bergaransi.",
+        "Jasa instalasi lift barang untuk gudang, pabrik, ruko dan industri. Tersedia berbagai kapasitas sesuai kebutuhan operasional.",
+    alternates: {
+        canonical: "/services/lift-barang",
+    },
 };
 
 export default function LiftBarangPage() {

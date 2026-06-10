@@ -5,9 +5,12 @@ import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    title: "Repair & Rekondisi Lift | KOMPUTECLIFT",
+    title: "Rekondisi Lift Profesional",
     description:
-        "Layanan repair, troubleshooting, dan rekondisi lift untuk mengembalikan performa sistem secara optimal dan aman.",
+        "Layanan rekondisi lift untuk mengembalikan performa dan keandalan sistem elevator dengan biaya yang lebih efisien.",
+    alternates: {
+        canonical: "/services/rekondisi-lift",
+    },
 };
 
 export default function RekondisiLiftPage() {

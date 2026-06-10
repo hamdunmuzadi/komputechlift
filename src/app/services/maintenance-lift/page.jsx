@@ -5,10 +5,13 @@ import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    // Menggunakan kata "Service" dan "Perbaikan" karena pencarian ini sangat tinggi
-    title: "Jasa Service & Maintenance Lift Berpengalaman | KOMPUTECLIFT",
+    title: "Maintenance Lift Profesional",
     description:
-        "Layanan jasa service, perbaikan (troubleshooting), dan maintenance lift bulanan untuk lift barang, dumbwaiter, dan lift penumpang. Teknisi profesional dan respon cepat.",
+        "Layanan maintenance lift berkala, preventive maintenance dan service lift untuk berbagai merek lift.",
+
+    alternates: {
+        canonical: "/services/maintenance-lift",
+    },
 };
 
 export default function MaintenanceLiftPage() {

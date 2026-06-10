@@ -5,10 +5,12 @@ import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    // Menambahkan kata "Jasa Pembuatan", "Restoran", dan "Cafe"
-    title: "Jasa Pembuatan Lift Makanan (Dumbwaiter) Restoran & Cafe | KOMPUTECLIFT",
+    title: "Lift Makanan Dumbwaiter",
     description:
-        "Melayani jasa pembuatan dan instalasi lift makanan (dumbwaiter) custom berbahan stainless steel food grade. Solusi higienis untuk restoran, cafe, hotel, dan rumah sakit.",
+        "Lift makanan atau dumbwaiter untuk restoran, hotel, rumah sakit dan cafe. Praktis untuk distribusi makanan antar lantai.",
+    alternates: {
+        canonical: "/services/lift-makanan",
+    },
 };
 
 export default function LiftMakananPage() {

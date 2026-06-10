@@ -6,20 +6,13 @@ import Navbar from "@/components/Navbar";
 
 // OPTIMASI METADATA UNTUK SEO
 export const metadata = {
-    title: "Jasa Instalasi Lift Baru | Passenger & Cargo | KOMPUTECLIFT",
+    title: "Jasa Instalasi Lift Profesional",
     description:
-        "Layanan profesional instalasi lift baru untuk gedung, rumah, hotel, rumah sakit, dan fasilitas industri. Teknologi modern dengan standar keselamatan internasional.",
-    keywords: [
-        "instalasi lift",
-        "pemasangan lift baru",
-        "lift penumpang",
-        "lift barang",
-        "home elevator",
-        "lift makanan",
-        "kontraktor lift terpercaya",
-        "jasa pasang lift gedung",
-        "komputeclift",
-    ],
+        "Jasa instalasi lift profesional untuk gedung, hotel, rumah sakit, industri dan hunian di seluruh Indonesia.",
+
+    alternates: {
+        canonical: "/services/instalasi-lift",
+    },
 };
 
 export default function InstalasiLiftPage() {
@@ -27,7 +20,7 @@ export default function InstalasiLiftPage() {
         // Wrapper utama diselaraskan dengan warna dasar aplikasi (bg-slate-50)
         <main className="min-h-screen bg-slate-50 flex flex-col">
             <Navbar />
-            
+
             {/* HERO SECTION - Menggunakan tema terang minimalis (Tipografi Kuat) */}
             <ServiceHero
                 badge="Layanan Utama KOMPUTECLIFT"

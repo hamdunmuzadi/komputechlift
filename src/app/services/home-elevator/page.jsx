@@ -7,9 +7,12 @@ import Navbar from "@/components/Navbar";
 // 1. OPTIMASI METADATA (SEO TECHNICAL)
 // Menambahkan 'keywords' (opsional tapi membantu) dan membuat 'description' lebih memancing CTR (Click-Through Rate).
 export const metadata = {
-    title: "Home Elevator | Jasa Pasang Lift Rumah Mewah & Modern",
-    description: "Spesialis jasa pemasangan home elevator terpercaya. Hadirkan lift rumah modern, hemat ruang (tanpa pit dalam), hemat listrik, dan aman untuk hunian Anda.",
-    keywords: "home elevator, lift rumah, jasa pasang lift rumah, lift rumah mewah, lift rumah kecil, harga lift rumah, lift rumah 2 lantai",
+    title: "Home Elevator untuk Rumah Tinggal",
+    description:
+        "Layanan home elevator untuk rumah tinggal, villa dan hunian bertingkat. Desain modern, aman dan nyaman untuk keluarga.",
+    alternates: {
+        canonical: "/services/home-elevator",
+    },
 };
 
 export default function HomeElevatorPage() {

@@ -82,8 +82,8 @@ export default function Hero() {
                     </div>
 
                     {/* 2. HEADLINE UTAMA */}
-                    <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight uppercase max-w-3xl mx-auto">
-                        Solusi Lift Profesional <br />
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 tracking-tight leading-tight uppercase max-w-3xl mx-auto">
+                        Jasa Instalasi Lift Profesional<br />
                         <span className="text-blue-600 inline-block mt-0.5">
                             Sektor Industri & Instansi
                         </span>
