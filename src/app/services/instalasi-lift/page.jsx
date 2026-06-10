@@ -4,116 +4,127 @@ import ServiceFAQ from "@/components/service/ServiceFAQ";
 import ServiceCTA from "@/components/service/ServiceCTA";
 import Navbar from "@/components/Navbar";
 
+// OPTIMASI METADATA UNTUK SEO
 export const metadata = {
-    title: "Instalasi Lift Baru | KOMPUTECLIFT",
+    title: "Jasa Instalasi Lift Baru | Passenger & Cargo | KOMPUTECLIFT",
     description:
-        "Layanan instalasi lift baru untuk gedung, rumah, hotel, rumah sakit, pusat perbelanjaan, dan fasilitas industri dengan teknologi modern dan standar keselamatan tinggi.",
+        "Layanan profesional instalasi lift baru untuk gedung, rumah, hotel, rumah sakit, dan fasilitas industri. Teknologi modern dengan standar keselamatan internasional.",
     keywords: [
         "instalasi lift",
-        "pemasangan lift",
+        "pemasangan lift baru",
         "lift penumpang",
         "lift barang",
         "home elevator",
         "lift makanan",
-        "kontraktor lift",
+        "kontraktor lift terpercaya",
+        "jasa pasang lift gedung",
         "komputeclift",
     ],
 };
 
 export default function InstalasiLiftPage() {
     return (
-        <main>
+        // Wrapper utama diselaraskan dengan warna dasar aplikasi (bg-slate-50)
+        <main className="min-h-screen bg-slate-50 flex flex-col">
             <Navbar />
+            
+            {/* HERO SECTION - Menggunakan tema terang minimalis (Tipografi Kuat) */}
             <ServiceHero
-                badge="LAYANAN KOMPUTECLIFT"
-                title="Instalasi Lift Baru"
-                description="Solusi lengkap mulai dari konsultasi, perencanaan, pengadaan unit, pemasangan, hingga commissioning lift untuk berbagai jenis bangunan dengan standar keselamatan dan kualitas tinggi."
+                badge="Layanan Utama KOMPUTECLIFT"
+                title="Instalasi Lift Baru Berstandar Global"
+                description="Solusi end-to-end mulai dari konsultasi teknis, perencanaan struktur, pengadaan unit, instalasi presisi, hingga commissioning untuk berbagai skala bangunan."
             />
 
+            {/* FEATURES 1 - Otomatis menggunakan tema gelap (bg-slate-950) */}
             <ServiceFeatures
-                title="Mengapa Memilih Layanan Instalasi Lift Kami?"
-                description="Kami memastikan setiap proyek dirancang sesuai kebutuhan bangunan, kapasitas pengguna, dan standar keselamatan yang berlaku."
+                title="Mengapa Memilih Layanan Instalasi Kami?"
+                description="Kami memastikan setiap proyek dirancang secara kustom sesuai kebutuhan kapasitas, struktur bangunan, dan standar regulasi keselamatan ketat."
                 items={[
                     {
-                        title: "Konsultasi & Survey Lokasi",
+                        title: "Konsultasi & Survey Akurat",
                         description:
-                            "Tim kami melakukan analisis kebutuhan dan survey lapangan untuk menentukan solusi lift yang paling sesuai.",
+                            "Tim ahli kami melakukan analisis mendalam dan survey topografi lapangan untuk menentukan spesifikasi lift yang paling efisien.",
                     },
                     {
-                        title: "Teknologi Modern",
+                        title: "Teknologi Kontrol Modern",
                         description:
-                            "Menggunakan sistem kontrol dan inverter modern untuk memberikan performa yang efisien dan nyaman.",
+                            "Mengadopsi sistem mikroprosesor dan inverter terbaru untuk memberikan performa pergerakan lift yang halus dan hemat energi.",
                     },
                     {
                         title: "Standar Keselamatan Tinggi",
                         description:
-                            "Setiap instalasi mengikuti prosedur keselamatan dan pengujian yang ketat sebelum diserahterimakan.",
+                            "Setiap instalasi wajib melewati serangkaian uji beban (load test) dan kalibrasi sensor keselamatan sebelum diserahterimakan.",
                     },
                     {
-                        title: "Dukungan Purna Jual",
+                        title: "Dukungan Purna Jual Prima",
                         description:
-                            "Didukung layanan maintenance dan dukungan teknis untuk menjaga performa lift tetap optimal.",
+                            "Investasi Anda terlindungi dengan layanan maintenance responsif dan jaminan ketersediaan suku cadang jangka panjang.",
                     },
                 ]}
             />
 
+            {/* FEATURES 2 - Menyambung mulus dengan area gelap di atasnya, menciptakan satu blok elegan */}
             <ServiceFeatures
                 title="Jenis Lift yang Kami Tangani"
-                description="KOMPUTECLIFT melayani berbagai kebutuhan sistem transportasi vertikal untuk sektor residensial maupun komersial."
+                description="KOMPUTECLIFT menyediakan infrastruktur transportasi vertikal yang andal untuk sektor residensial, komersial, maupun industrial."
                 items={[
                     {
-                        title: "Lift Penumpang",
+                        title: "Lift Penumpang (Passenger)",
                         description:
-                            "Untuk gedung perkantoran, hotel, apartemen, rumah sakit, dan pusat perbelanjaan.",
+                            "Mobilitas berkapasitas tinggi untuk gedung perkantoran, hotel, apartemen, pusat perbelanjaan, dan rumah sakit.",
                     },
                     {
                         title: "Home Elevator",
                         description:
-                            "Lift rumah modern dengan desain elegan, nyaman, dan hemat ruang.",
+                            "Elevator hunian mewah dengan kustomisasi desain interior elegan, operasi sangat senyap, dan hemat ruang.",
                     },
                     {
-                        title: "Lift Barang",
+                        title: "Lift Barang (Cargo Lift)",
                         description:
-                            "Dirancang untuk mendukung kebutuhan logistik, gudang, dan fasilitas industri.",
+                            "Konstruksi heavy-duty yang dirancang khusus untuk mendukung arus logistik berat di gudang dan fasilitas industri.",
                     },
                     {
-                        title: "Lift Makanan",
+                        title: "Lift Makanan (Dumbwaiter)",
                         description:
-                            "Dumbwaiter untuk restoran, hotel, rumah sakit, dan dapur komersial.",
+                            "Solusi distribusi barang kecil yang higienis dan efisien untuk restoran, dapur komersial, hotel, dan laboratorium.",
                     },
                 ]}
             />
 
+            {/* FAQ SECTION - Kembali ke tema terang (bg-slate-50) dengan animasi akordion */}
             <ServiceFAQ
+                title="FAQ Seputar Instalasi Lift"
+                description="Informasi ringkas mengenai prosedur operasional dan cakupan layanan teknis instalasi KOMPUTECLIFT."
                 items={[
                     {
-                        question: "Apakah KOMPUTECLIFT melayani instalasi lift rumah?",
+                        question: "Apakah melayani pemasangan lift untuk bangunan yang sudah jadi?",
                         answer:
-                            "Ya. Kami menyediakan solusi home elevator untuk rumah tinggal, villa, dan bangunan residensial lainnya.",
+                            "Ya. Kami memiliki solusi desain lift tanpa galian pit dalam (pitless) yang aman dipasang pada bangunan eksisting tanpa merombak struktur utama secara masif.",
                     },
                     {
-                        question: "Apakah tersedia layanan survey lokasi?",
+                        question: "Bagaimana tahapan untuk memulai instalasi?",
                         answer:
-                            "Ya. Tim kami dapat melakukan survey lokasi untuk menentukan spesifikasi dan kebutuhan instalasi yang paling sesuai.",
+                            "Tim kami akan melakukan survey lokasi secara gratis untuk mengukur ruang luncur (hoistway), mendiskusikan kapasitas, dan menyusun penawaran harga (RAB) yang transparan.",
                     },
                     {
-                        question: "Apakah melayani lift barang dan lift makanan?",
+                        question: "Apakah KOMPUTECLIFT melayani instalasi lift barang skala industri?",
                         answer:
-                            "Ya. Kami melayani instalasi lift barang (cargo lift) dan lift makanan (dumbwaiter) untuk berbagai kebutuhan usaha dan industri.",
+                            "Tentu. Kami melayani instalasi lift barang (cargo lift) berkapasitas tonase besar dengan material baja solid dan sistem penggerak traksi/hidrolik yang tangguh.",
                     },
                     {
-                        question: "Apakah tersedia layanan maintenance setelah instalasi?",
+                        question: "Apakah instalasi sudah termasuk garansi dan maintenance?",
                         answer:
-                            "Ya. Kami menyediakan program maintenance berkala untuk memastikan lift tetap aman dan beroperasi secara optimal.",
+                            "Pasti. Setiap pemasangan unit baru sudah mencakup garansi resmi suku cadang dan program maintenance berkala (free maintenance) selama periode awal operasional.",
                     },
                 ]}
             />
 
+            {/* CTA SECTION - Menggunakan tema kartu gelap melayang di latar putih */}
             <ServiceCTA
                 title="Butuh Konsultasi Instalasi Lift?"
-                description="Diskusikan kebutuhan proyek Anda bersama tim KOMPUTECLIFT dan dapatkan solusi yang tepat untuk bangunan Anda."
+                description="Diskusikan spesifikasi proyek Anda bersama teknisi ahli KOMPUTECLIFT. Dapatkan estimasi harga terbaik dan jadwal survey lokasi tanpa biaya."
+                buttonText="Hubungi Konsultan Kami"
             />
-
         </main>
     );
 }
