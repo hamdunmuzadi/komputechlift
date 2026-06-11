@@ -24,7 +24,7 @@ export default function TrustedBy() {
 
     return (
         <section className="py-24 bg-slate-950 border-b border-slate-800">
-            <div className="max-w-7xl mx-auto px-6 w-full space-y-16">
+            <div className="max-w-5xl mx-auto px-6 w-full space-y-16">
 
                 {/* 1. HEADER SECTION */}
                 <div className="text-center space-y-4 max-w-2xl mx-auto">

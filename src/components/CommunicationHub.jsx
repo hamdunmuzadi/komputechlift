@@ -18,7 +18,7 @@ export default function CommunicationHub() {
 
     return (
         <section id="konsultasi" className="py-24 bg-white">
-            <div className="max-w-6xl mx-auto px-6 space-y-16">
+            <div className="max-w-5xl mx-auto px-6 space-y-16">
                 {/* Header */}
                 <div className="text-center space-y-4">
                     <h2 className="text-4xl font-black text-gray-900 tracking-tight">

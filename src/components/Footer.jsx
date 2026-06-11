@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaYoutube, FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
 
@@ -12,6 +13,17 @@ export default function Footer() {
         { name: "Referensi Project", href: "#projects" },
         { name: "Dokumen Legalitas", href: "#documents" },
         { name: "Hubungi Kami", href: "#contact" },
+    ];
+
+    // Array layanan untuk meningkatkan kekuatan SEO Internal Linking
+    const services = [
+        { name: "Home Elevator", href: "/services/home-elevator" },
+        { name: "Instalasi Lift", href: "/services/instalasi-lift" },
+        { name: "Lift Barang", href: "/services/lift-barang" },
+        { name: "Lift Makanan", href: "/services/lift-makanan" },
+        { name: "Maintenance Lift", href: "/services/maintenance-lift" },
+        { name: "Modernisasi Lift", href: "/services/modernisasi-lift" },
+        { name: "Rekondisi Lift", href: "/services/rekondisi-lift" },
     ];
 
     const socialLinks = [
@@ -29,18 +41,14 @@ export default function Footer() {
             {/* Ornamen Grafis Halus Latar Belakang */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 w-full space-y-12 relative z-10">
+            <div className="max-w-5xl mx-auto px-6 w-full space-y-12 relative z-10">
 
                 {/* BAGIAN ATAS: GRID INFORMASI */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-900">
 
-                    {/* KOLOM 1: BRAND IDENTITY (5 COLS) */}
-                    <div className="md:col-span-5 space-y-5">
+                    {/* KOLOM 1: BRAND IDENTITY (4 COLS) */}
+                    <div className="md:col-span-4 space-y-5">
                         <div className="flex items-center gap-2.5 text-white">
-                            {/* Placeholder Logo Grafik */}
-                            {/* <div className="bg-blue-600 p-2 rounded-lg text-white font-black tracking-tighter text-sm">
-                                KT
-                            </div> */}
                             <span className="font-sans font-black text-lg tracking-tight">
                                 KOMPUTEC<span className="text-blue-500">LIFT</span>
                             </span>
@@ -67,12 +75,12 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* KOLOM 2: QUICK LINKS (3 COLS) */}
-                    <div className="md:col-span-3 space-y-4">
+                    {/* KOLOM 2: QUICK LINKS (2 COLS) */}
+                    <div className="md:col-span-2 space-y-4">
                         <h4 className="text-white font-bold text-xs tracking-wider uppercase">
                             Navigasi Cepat
                         </h4>
-                        <ul className="space-y-2.5 text-xs">
+                        <ul className="space-y-2.5 text-xs flex-nowrap">
                             {quickLinks.map((link, idx) => (
                                 <li key={idx}>
                                     <a
@@ -86,8 +94,27 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* KOLOM 3: KONTAK OPERASIONAL (4 COLS) */}
-                    <div className="md:col-span-4 space-y-4">
+                    {/* KOLOM 3: LAYANAN UTAMA (3 COLS) - Solusi untuk mempercepat indeks Google */}
+                    <div className="md:col-span-3 space-y-4">
+                        <h4 className="text-white font-bold text-xs tracking-wider uppercase">
+                            Layanan Kami
+                        </h4>
+                        <ul className="space-y-2.5 text-xs">
+                            {services.map((service, idx) => (
+                                <li key={idx}>
+                                    <Link
+                                        href={service.href}
+                                        className="hover:text-blue-400 transition-colors duration-200 block w-fit"
+                                    >
+                                        {service.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* KOLOM 4: KONTAK OPERASIONAL (3 COLS) */}
+                    <div className="md:col-span-3 space-y-4">
                         <h4 className="text-white font-bold text-xs tracking-wider uppercase">
                             Hub Logistik & Informasi
                         </h4>
@@ -121,31 +148,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                </div>
-
-                <div className="md:col-span-4 space-y-4">
-                    <h4 className="text-white font-bold text-xs tracking-wider uppercase">
-                        Hub Logistik & Informasi
-                    </h4>
-                    <ul className="space-y-3.5 text-xs">
-                        <li className="flex items-start gap-3">
-                            <FaMapMarkerAlt className="text-blue-500 mt-0.5 flex-none" />
-                            <a
-                                href="https://share.google/vZ3ICXkXOp4iZMRmf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="leading-relaxed hover:text-blue-400 transition-colors"
-                            >
-                                Komputec Headquarters — Klik untuk melihat rute dan lokasi peta fisik kami.
-                            </a>
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <FaEnvelope className="text-blue-500 flex-none" />
-                            <a href="mailto:komputeclift@gmail.com" className="hover:text-blue-400 transition-colors">
-                                komputeclift@gmail.com
-                            </a>
-                        </li>
-                    </ul>
                 </div>
 
                 {/* BAGIAN BAWAH: COPYRIGHT & BACK TO TOP */}

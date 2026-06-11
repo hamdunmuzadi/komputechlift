@@ -1,11 +1,21 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+// 1. Impor komponen Schema yang sudah kita buat sebelumnya
+// (Sesuaikan path/jalur folder jika Anda menyimpannya di tempat lain)
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
 
 const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-jakarta",
 });
+
+// 2. OPTIMASI NEXT.JS 14+: Memisahkan viewport dari objek metadata utama
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#2563eb", // Warna biru brand KomputecLift untuk browser mobile
+};
 
 export const metadata = {
   metadataBase: new URL("https://komputeclift.com"),
@@ -127,6 +137,12 @@ export const metadata = {
   },
 
   category: "Engineering",
+
+  // TIPS TAMBAHAN: Jika Anda memverifikasi Search Console via HTML Tag, 
+  // google-site-verification=4l5_h2v02vhxL9-S9bQg4GBr7fIwdMgepJ_m1E8l6gY
+  verification: {
+    google: "4l5_h2v02vhxL9-S9bQg4GBr7fIwdMgepJ_m1E8l6gY",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -135,6 +151,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${jakartaSans.variable} font-sans bg-white text-gray-900`}
       >
+        {/* 3. Menanamkan Komponen Schema agar terbaca Googlebot di semua halaman */}
+        <OrganizationSchema />
+
         {children}
       </body>
     </html>

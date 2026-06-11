@@ -17,7 +17,7 @@ export default function Navbar() {
             href: "/services/home-elevator",
         },
         {
-            name: "INSTAKASI LIFT",
+            name: "INSTALASI LIFT",
             href: "/services/instalasi-lift",
         },
         {
@@ -33,7 +33,7 @@ export default function Navbar() {
             href: "/services/maintenance-lift",
         },
         {
-            name: "MODERENISASI LIFT",
+            name: "MODERNISASI LIFT",
             href: "/services/modernisasi-lift",
         },
         {
