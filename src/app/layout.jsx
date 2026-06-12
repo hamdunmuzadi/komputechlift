@@ -19,6 +19,10 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL("https://komputeclift.com"),
+  
+  alternates: {
+    canonical: "/",
+  },
 
   title: {
     default:
